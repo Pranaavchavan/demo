@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 20px;
+    }
+    
+</style>
+</head>
+  <body>
+    <div class="container">
+     <h2> Resume Builder form </h2>
+     <form action="Submit Resume.php" method="post">
+        <!------Pesrsonal Information--->
+        <h3>Personal Information</h3>
+        <label for="fullname">Full Name:</label>
+        <input type="text" id="fullname" name="fullname"  placeholder="Enter Full name"required>
+        
+        <lable for="email">Email:</lable>
+        <input type="email" id="email" name="email"  placeholder="Enter Email"required>
+
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone"  placeholder="Enter phone"required>
+
+        <lable for="address">Address:</lable>
+        <input type="text" id="address" name="address"  placeholder="Enter Address"required>
+
+        <lable for="Linkedin">Linkedin:</lable>
+        <input type="url" id="Linkedin" name="Linkedin" placeholder="Enter Linkedin Profile" required>
+
+        <Lable for="photo">Photo:</Lable>
+        <input type="file" id="photo" name="photo" accept="photo" required>
+
+        <! education details>
+        <h3>Education Details</h3>
+        <label for="degree">Degree:</label>
+        <input type="text" id="degree" name="degree" required>
+
+        <label for="university">University:</label>
+        <input type="text" id="university" name="university" required>  
+ 
+        <label for="graduation Year">Graduation Year:</label>
+        <input type="number" id="graduation Year" name="graduation Year" required>
+
+        <!---work experience-->
+        <h3>Work Experience</h3>
+        <label for="company">Company:</label>
+        <input type+="text" id="company" name="company" required>
+
+        <label for="job title">Job Title:</label>
+        <input type="text" id="job title" name="job title" required>
+
+        <label for="JobDescription">Job Description:</label>
+        <input type="text" id="JobDescription" name="JobDescription" required>
+
+        <label for="Work Experience">Experience:</label>
+        <input type="number" id="Work Experience" name="Work Experience" min="0" max="50" required>
+
+        <! skills-->
+        <h3>Skills</h3>
+        <lable>Select your Skills:c</lable>
+        <input type="checkbox" name="Skills" value="HTML"> HTML
+        <input type="checkbox" name="Skills" value="CSS"> CSS
+        <input type="checkbox" name="Skills" value="JavaScript"> JavaScript
+        <input type="checkbox" name="Skills" value="python"> Python 
+        <input type="checkbox" name="Skills" value="Java"> Java
+        <input type="checkbox" name="Skills" value="C++"> C++
+        <input type="checkbox" name="Skills" value="C#"> C#
+        <input type="checkbox" name="Skills" value="PHP"> PHP
+        <input type="checkbox" name="Skills" value="Ruby"> Ruby
+        <input type="checkbox" name="Skills" value="Swift"> Swift    
+        <br> <br>
+        <!certifications--> 
+        <h3>Certifications</h3>
+        <label for ="certification">List Any Certification:</label>
+        <textarea id="certification" name="certification" rows="3"></textarea>
+
+        <!additional information-->
+        <h3>Additional Information</h3>
+        <label for="lannguages">Languages spoken:</label>
+        <input type ="text" id="languages" name="languages" required>
+
+        <lable for="projrcts"> Projects:</lable>
+        <textarea id="projects" name="projects" rows="3"></textarea>
+
+        <label for="hobbies"> hobbies:</label>
+        <input type="text" id="hobbies" name="hobbies" required>
+
+        <lable for="objectives"> objectives:</lable>
+        <input type="text" id="objectives" name="objectives" required>
+
+        <!submit button-->
+        <button type="submit">Generate Resume</button>
+        
+
+
+
+
+
+        </form>  
+        
+        
+        </div>
+    
+    
+    </body>  
+
+</html>
