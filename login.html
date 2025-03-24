@@ -17,5 +17,25 @@
        <button type="submit">Submit</button>
 
     </form>
+    <script>
+        function validateForm(){
+            let email=document.getElementById("email").value;
+            let password=document.getElementById("password").value;
+        
+        if (!email.includes("@gmail.com")){
+             alert("invalid email!");
+             return false;
+        }
+    if (password.length<6){
+        alert("password must be at least 6  character long!");
+        return false;
+
+    }
+    alert("form Submitted successfully!");
+    return true;
+       
+    
+    }
+    </script>
 </body>
 </html>
